@@ -70,7 +70,7 @@ public class Select extends Statement{
                 throw new IllegalArgumentException("Could not match Where Arguments with '?'"
                         + " characters in the input[" 
                         + whereClause.length() + " - "
-                        + temp.length() + " != " + whereArgs.length +"] " + whereArgs[0]);
+                        + temp.length() + " != " + whereArgs.length +"]");
             }
             for (String i : whereArgs)whereClause = whereClause.replaceFirst("\\?", i);
         }

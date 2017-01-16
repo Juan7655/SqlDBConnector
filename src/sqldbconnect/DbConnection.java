@@ -8,8 +8,6 @@ package sqldbconnect;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -19,7 +17,7 @@ public class DbConnection {
 
     private boolean opened = false;
     private Connection conn;
-    private String dbName;
+    private final String dbName;
     private final String username;
     private final String password;
     private String url;
